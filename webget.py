@@ -1,5 +1,5 @@
 import socket
-
+#https://github.com/Woshixzj-0616/webget
 def get_content_length(head: bytes):
     for line in head.split(b"\r\n"): #根据\r\n继续分割换行，还是ai教我怎么用split的
         if line.lower().startswith(b"content-length:"): 
